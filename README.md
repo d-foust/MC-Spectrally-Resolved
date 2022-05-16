@@ -1,5 +1,5 @@
 # MC-Spectrally-Resolved
-Monte Carlo simulations of spectrally resolved images in fluorescence microscopy for analysis with fluorescence fluctuation spectroscopy.
+Monte Carlo simulations of spectrally resolved images in fluorescence microscopy for analysis with fluorescence fluctuation spectroscopy. Images are of a uniform distribution of fluorescent particles in two dimensions.
 
 # 0. Load packages
 
@@ -87,12 +87,9 @@ plt.imshow(image_particles[0], interpolation='none', cmap='binary_r')
 plt.tight_layout()
 plt.axis('off')
 plt.colorbar();
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'image_particles.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
-
+<img src="example%20images/image_particles.png" width="500">
 
 
 # 3. Convolution with model PSF (i.e. Gaussian blur)
@@ -109,13 +106,10 @@ plt.imshow(image_gaussian[0], interpolation='none', cmap='binary_r')
 plt.tight_layout()
 plt.axis('off')
 plt.colorbar();
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'image_gaussian.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
 
-    Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous …
+<img src="example%20images/image_gaussian.png" width="500">
 
 
 # 4. Scale for molecular brightness
@@ -137,13 +131,10 @@ plt.imshow(image_brightness[0], interpolation='none', cmap='binary_r')
 plt.tight_layout()
 plt.axis('off')
 plt.colorbar();
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'image_brightness.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
 
-    Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous …
+<img src="example%20images/image_colorized.png" width="500">
 
 
 # 5. Poisson filter to capture stochastic nature of photon emission/detection
@@ -160,13 +151,10 @@ plt.imshow(image_poisson[0], interpolation='none', cmap='binary_r')
 plt.tight_layout()
 plt.axis('off')
 plt.colorbar();
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'image_poisson.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
 
-    Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous …
+<img src="example%20images/spectracomparison.png" width="500">
 
 
 # 6. Split into individual channels
@@ -212,13 +200,10 @@ for i, ax in enumerate(axs.ravel()[:len(pvals)]):
     ax.title.set_text(str(data_spectra['Channel'][i])+' nm')
 plt.tight_layout(pad=0)
 axs[4,3].set_axis_off(); axs[4,4].set_axis_off()
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'image_colorized.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
 
-    Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous …
+<img src="example%20images/spectracomparison.png" width="500">
 
 
 ## Compare spectra
@@ -241,13 +226,10 @@ plt.xlabel('Detection Channel (nm)', fontsize=14)
 sns.despine()
 plt.legend(fontsize=12)
 plt.tight_layout();
-# save_fld = r'F:\Demo figures\simulating spectrally resolved images'
-# plt.savefig(join(save_fld, 'spectracomparison.png'),
-#            transparent=True, dpi=600, bbox_inches='tight');
 ```
 
 
-    Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous …
+<img src="example%20images/image_particles.png" width="500">
 
 
 # Functions
