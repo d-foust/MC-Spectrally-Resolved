@@ -134,7 +134,7 @@ plt.colorbar();
 ```
 
 
-<img src="example%20images/image_colorized.png" width="500">
+<img src="example%20images/image_brightness.png" width="500">
 
 
 # 5. Poisson filter to capture stochastic nature of photon emission/detection
@@ -154,7 +154,7 @@ plt.colorbar();
 ```
 
 
-<img src="example%20images/spectracomparison.png" width="500">
+<img src="example%20images/image_poisson.png" width="500">
 
 
 # 6. Split into individual channels
@@ -203,7 +203,7 @@ axs[4,3].set_axis_off(); axs[4,4].set_axis_off()
 ```
 
 
-<img src="example%20images/spectracomparison.png" width="500">
+<img src="example%20images/image_colorized.png" width="500">
 
 
 ## Compare spectra
@@ -229,7 +229,7 @@ plt.tight_layout();
 ```
 
 
-<img src="example%20images/image_particles.png" width="500">
+<img src="example%20images/spectracomparison.png" width="500">
 
 
 # Functions
